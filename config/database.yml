@@ -1,4 +1,4 @@
-<% project_name = 'rails-api-aedecarlis' %>
+<% project_name = 'employee-forms-server' %>
 
 default: &default
   adapter: postgresql
