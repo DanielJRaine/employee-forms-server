@@ -40,7 +40,7 @@ module EmployeeFormsServer
 
     # Cross-Origin Resource Sharing
     # development client port
-    cors_port = 'GA'.each_byte.reduce('') { |a, e| a + format('%d', e) }.to_i
+    cors_port = 4200
     config.middleware.use Rack::Cors do
       allow do
         origins ENV['CLIENT_ORIGIN'] || "http://localhost:#{cors_port}"
